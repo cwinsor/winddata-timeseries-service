@@ -84,8 +84,8 @@ public class WindDataImpl implements WindDataAPI {
 	public void init() {
 		try {
 			this.serviceManagerService.createRestWebService(this, null);
-			this.timeseriesClient.createConnectionToTimeseriesWebsocket();
-			createMetrics();
+ 			this.timeseriesClient.createConnectionToTimeseriesWebsocket();
+			// zona			createMetrics();
 		} catch (Exception e) {
 			throw new RuntimeException(
 					"unable to set up timeseries Websocket Pool timeseriesConfig=" + this.timeseriesConfig, e);
