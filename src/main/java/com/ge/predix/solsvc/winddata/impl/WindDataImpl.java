@@ -261,6 +261,7 @@ public class WindDataImpl implements WindDataAPI {
 
 	@SuppressWarnings({ "nls", "unchecked" })
 	private void createMetrics() {
+	    /*
 		for (int i = 0; i < 10; i++) {
 			DatapointsIngestion dpIngestion = new DatapointsIngestion();
 			dpIngestion.setMessageId(String.valueOf(System.currentTimeMillis()));
@@ -319,6 +320,7 @@ public class WindDataImpl implements WindDataAPI {
 			dpIngestion.setBody(bodies);
 			this.timeseriesClient.postDataToTimeseriesWebsocket(dpIngestion);
 		}
+	    */
 	}
 
 	@SuppressWarnings("javadoc")
