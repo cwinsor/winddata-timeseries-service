@@ -110,7 +110,7 @@ public class Application
         SpringApplication springApplication = new SpringApplication(Application.class);
         ApplicationContext ctx = springApplication.run(args);
 
-        log.debug("Let's inspect the beans provided by Spring Boot:");
+        log.debug("Let's inspect the beans provided by Spring Boot:!!!!");
         String[] beanNames = ctx.getBeanDefinitionNames();
         Arrays.sort(beanNames);
         for (String beanName : beanNames)
